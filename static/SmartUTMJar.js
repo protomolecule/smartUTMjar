@@ -110,7 +110,7 @@ function fillUTMJarField() {
         var utmc = cookie[0].utm_campaign;
         var utmcontent = cookie[0].utm_content;
         var utmterm = cookie[0].utm_term;
-        var firstVisitTime = cookie[0].visit;
+        var firstVisitTime = cookie[cookie.length - 1].visit;
         var referrer = cookie[0].referrer;
         var landingPage = cookie[0].landingPage;
 
